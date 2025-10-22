@@ -16,6 +16,9 @@ import Counter01 from './propComponent/test01';
 import Exstate12 from './stateComponent/Ex12';
 import Exstate18 from './stateComponent/Ex18';
 import Blog from './stateComponent/blog';
+import MovieReview from './stateComponent/MovieReview';
+import ShoppingList from './stateComponent/ShoppingList';
+import CommentBoard from './stateComponent/CommentBoard';
 
 function App() {
   // const [count, setCount] = useState(0);

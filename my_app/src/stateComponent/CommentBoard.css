@@ -1,0 +1,28 @@
+.commentApp {
+  width: 400px;
+  margin: 40px auto;
+  font-family: 'Pretendard';
+}
+
+.commentItem {
+  background: #f5f5f5;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commentItem span {
+  cursor: pointer;
+}
+
+button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}

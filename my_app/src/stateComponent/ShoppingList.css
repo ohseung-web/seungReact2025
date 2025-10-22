@@ -1,0 +1,33 @@
+.shopApp {
+  width: 400px;
+  margin: 40px auto;
+  font-family: 'Pretendard';
+}
+
+.inputArea {
+  text-align: center;
+}
+
+.itemRow {
+  display: flex;
+  justify-content: space-between;
+  background: #f1f1f1;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+button {
+  margin-left: 4px;
+  border: none;
+  background: #0088cc;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
