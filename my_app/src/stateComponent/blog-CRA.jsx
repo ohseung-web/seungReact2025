@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-export default function Blog() {
+export default function BlogCra() {
   // let post = '강남 우동 맛집';
   let [글제목, 글제목변경] = useState([
     '남자코트 추천',
