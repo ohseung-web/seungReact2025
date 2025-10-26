@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import FoodList from '../food/foodList';
 import CartModal from '../food/cartModal';
+import '../food/foodApp.css';
 
 export default function FoodApp() {
   const [foods] = useState([
@@ -31,11 +32,10 @@ export default function FoodApp() {
 
   // 장바구니 수량 +/- 업데이트 함수
   const updateCnt = (foodId, newQuantity) => {
-    let cartCopy = [...cart];
-    cart.map((item) =>
-      item.id === foodId ? cartCopy.push({ quantity: newQuantity }) : item
+    const updateCart = cart.map((item) =>
+      item.id === foodId ? { ...item, quantity: newQuantity } : item
     );
-    setCart(cartCopy);
+    setCart(updateCart);
   };
 
   return (

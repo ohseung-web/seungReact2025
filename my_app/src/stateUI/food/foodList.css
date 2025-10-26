@@ -1,0 +1,36 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fffaf0;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ffe0b3;
+}
+
+li span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+li button {
+  background: #00c781;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+li button:hover {
+  background: #00a86b;
+}

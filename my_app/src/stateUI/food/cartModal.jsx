@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../food/cartModal.css';
 export default function CartModal(props) {
   const minusBtn = (item) => {
     if (item.quantity <= 1) {
@@ -13,7 +14,7 @@ export default function CartModal(props) {
       alert('최대 수량 10개');
       return;
     }
-    props.updateCnt(item, item.quantity + 1);
+    props.updateCnt(item.id, item.quantity + 1);
   };
 
   return (
@@ -48,9 +49,11 @@ export default function CartModal(props) {
                 {props.cart.map((item, index) => (
                   <li key={index}>
                     {item.name}
-                    <button onClick={() => minusBtn(item)}>-</button>
-                    <span>{item.quantity}</span>
-                    <button onClick={() => plusBtn(item)}>+</button>
+                    <div className="qty-controls">
+                      <button onClick={() => minusBtn(item)}>-</button>
+                      <span>{item.quantity}</span>
+                      <button onClick={() => plusBtn(item)}>+</button>
+                    </div>
                   </li>
                 ))}
               </ul>

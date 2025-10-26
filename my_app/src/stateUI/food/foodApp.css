@@ -1,0 +1,33 @@
+/* 전체 컨테이너 */
+.food {
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 400px;
+  background: #fffdf7;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+/* 제목 */
+.food h2 {
+  margin-bottom: 20px;
+  color: #ff6b00;
+}
+
+/* 장바구니 버튼 */
+.food button {
+  background: #ff6b00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.food button:hover {
+  background: #ff8400;
+}

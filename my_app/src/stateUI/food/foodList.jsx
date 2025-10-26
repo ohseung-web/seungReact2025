@@ -1,3 +1,4 @@
+import '../food/foodList.css';
 export default function FoodList(props) {
   return (
     <>
