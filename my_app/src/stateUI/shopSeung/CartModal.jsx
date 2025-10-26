@@ -2,6 +2,7 @@
 import React from 'react';
 
 export default function CartModal({ cart, onClose }) {
+  // CartModal 안에서 제대로 작동되는지 디버깅하는 콘솔
   console.log('장바구니 데이터:', cart);
   cart.forEach((item) => {
     console.log(
@@ -37,13 +38,24 @@ export default function CartModal({ cart, onClose }) {
         {cart.length === 0 ? (
           <p>비어있습니다</p>
         ) : (
-          <ul>
-            {cart.map((item) => (
-              <li key={item.id}>
-                {item.name} x {item.quantity}
-              </li>
+          <div>
+            {cart.map((item, index) => (
+              <div
+                key={index}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  marginBottom: '8px',
+                  border: '1px solid red',
+                }}
+              >
+                <span>
+                  {item.name} x {item.quantity}
+                </span>
+                <span>{item.price * item.quantity}원</span>
+              </div>
             ))}
-          </ul>
+          </div>
         )}
         <button onClick={onClose}>닫기</button>
       </div>

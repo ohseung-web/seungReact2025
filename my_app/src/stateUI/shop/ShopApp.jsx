@@ -13,18 +13,27 @@ export default function ShopApp() {
   const [showCart, setShowCart] = useState(false);
 
   const addToCart = (product) => {
-    const existing = cart.find((item) => item.id === product.id);
-    if (existing) {
-      setCart(
-        cart.map((item) =>
-          item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item
-        )
-      );
+    const cartCopy = [...cart];
+    // const existing = cart.find((item) => item.id === product.id);
+    // 배열이름.findIndex() : index가 존재하면 존재하는 위치 숫자로 출력
+    //                       존재하지 않으면 -1이 출력된다.
+    // findIndex() 형식
+    // 배열이름.findIndex((요소, 인덱스, 원본배열) => return 조건 )
+    const index = cart.findIndex((cartItem) => cartItem.id === product.id);
+    console.log('index 찾기', index);
+    if (index != -1) {
+      // 장바구니 상품 이미 존재할 때 수량만 증가
+      cartCopy[index].quantity += 1;
     } else {
-      setCart([...cart, { ...product, quantity: 1 }]);
+      // 장바구니 상품이 없으면 상품 추가
+      cartCopy.push({
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        quantity: 1,
+      });
     }
+    setCart(cartCopy);
   };
 
   return (

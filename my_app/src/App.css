@@ -215,3 +215,6 @@ main {
   background-color: #333;
   color: white;
 }
+.monuseHover li:hover {
+  background-color: lightgray;
+}

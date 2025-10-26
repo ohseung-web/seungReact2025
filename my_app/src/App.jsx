@@ -2,9 +2,12 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import MovieApp from './stateUI/movie/MovieApp';
+
+import MovieAppS from './stateUI/movieSeung/MovieApp';
+import ShopAppS from './stateUI/shopSeung/ShopApp';
 import ShopApp from './stateUI/shop/ShopApp';
-import AuthApp from './stateUI/member/AuthApp';
+import HoverTabMenu from './stateUI/mouseTab';
+import FoodApp from './stateUI/food/foodApp';
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -22,7 +25,7 @@ function App() {
   return (
     <>
       <div>
-        <AuthApp />
+        <FoodApp />
       </div>
     </>
   );

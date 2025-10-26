@@ -1,0 +1,133 @@
+/* 기본 레이아웃 */
+.blog-container {
+  font-family: 'Pretendard', sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 16px;
+  color: #333;
+}
+
+/* 네비게이션 */
+.nav-bar {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  padding: 14px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 입력 영역 */
+.input-area {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0;
+}
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.input-area button {
+  background-color: #4e54c8;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.input-area button:hover {
+  background-color: #5f65e0;
+}
+
+/* 게시글 카드 */
+.post-card {
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.1s;
+}
+.post-card:hover {
+  transform: scale(1.01);
+}
+.post-card h3 {
+  margin: 0;
+  cursor: pointer;
+  color: #333;
+}
+.post-card h3:hover {
+  color: #4e54c8;
+}
+.post-date {
+  font-size: 13px;
+  color: #888;
+}
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.like {
+  cursor: pointer;
+  color: #4e54c8;
+  font-weight: bold;
+}
+.delete-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.delete-btn:hover {
+  background: #ff4b4b;
+}
+
+/* 모달 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  width: 400px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.modal h2 {
+  margin-top: 0;
+}
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+.modal-buttons button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.modal-buttons button:first-child {
+  background-color: #4e54c8;
+  color: white;
+}
+.modal-buttons button:last-child {
+  background-color: #ccc;
+}
