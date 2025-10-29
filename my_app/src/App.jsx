@@ -3,12 +3,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
-import MovieAppS from './stateUI/movieSeung/MovieApp';
-import ShopAppS from './stateUI/shopSeung/ShopApp';
-import ShopApp from './stateUI/shop/ShopApp';
-import HoverTabMenu from './stateUI/mouseTab';
-import FoodApp from './stateUI/food/foodApp';
-import ChangeImg04 from './stateUI/imgChange04';
+import Ex10 from './stateUI/Effect/Ex10';
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -26,7 +21,7 @@ function App() {
   return (
     <>
       <div>
-        <ChangeImg04 />
+        <Ex10 />
       </div>
     </>
   );
