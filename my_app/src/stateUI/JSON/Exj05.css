@@ -1,0 +1,14 @@
+.postBox {
+  margin: auto;
+  max-width: 500px;
+}
+li {
+  cursor: pointer;
+  margin: 10px 0;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+li:hover {
+  background: #e0ecff;
+}

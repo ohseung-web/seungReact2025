@@ -1,0 +1,12 @@
+.wrap {
+  text-align: center;
+  margin: 20px auto;
+}
+button {
+  padding: 8px 15px;
+  background: #2b74e4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

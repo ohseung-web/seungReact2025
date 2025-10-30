@@ -3,8 +3,9 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
-import Ex10 from './stateUI/Effect/Ex10';
-
+import ExFatch from './stateUI/JSON/ExFatch';
+import ExJ09 from './stateUI/JSON/ExJ09';
+import ProductApp from './stateUI/JSON/ProductApp';
 function App() {
   // const [count, setCount] = useState(0);
 
@@ -21,7 +22,7 @@ function App() {
   return (
     <>
       <div>
-        <Ex10 />
+        <ProductApp />
       </div>
     </>
   );
