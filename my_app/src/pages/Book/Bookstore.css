@@ -1,0 +1,100 @@
+/* 전체 body 기본 스타일 */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* 책 목록 영역 */
+.book-list {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.book-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ul: flex로 책 나열 */
+.book-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* 책 간 간격 */
+  justify-content: flex-start; /* 남는 공간 왼쪽 정렬 */
+  padding: 0;
+}
+
+/* li: 개별 책 카드 */
+.book-list li {
+  list-style: none;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-list img {
+  border-radius: 4px;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.book-list p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* 상세 페이지 스타일 */
+.book-detail {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.book-detail h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.book-detail img {
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.book-detail p {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.book-detail a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.book-detail a:hover {
+  background-color: #0056b3;
+}

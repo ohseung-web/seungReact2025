@@ -1,0 +1,104 @@
+/* 전체 페이지 기본 설정 */
+body {
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 제목 */
+h2 {
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+/* 탭 메뉴 영역 */
+.tabMenu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.tabMenu button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.tabMenu button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.tabMenu button:active {
+  transform: scale(0.95);
+}
+
+/* 상품 리스트 전체 */
+.productList ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* 각 상품 카드 */
+.productList li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex-shrink: 0;
+}
+
+.productList li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 이미지 */
+.productList img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* 상품 제목 */
+.productList p:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 5px;
+  height: 40px; /* 두 줄 정렬용 */
+  overflow: hidden;
+}
+
+/* 가격 */
+.productList p:nth-of-type(2) {
+  color: #0077cc;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* 평점 */
+.productList p:nth-of-type(3) {
+  font-size: 13px;
+  color: #555;
+}

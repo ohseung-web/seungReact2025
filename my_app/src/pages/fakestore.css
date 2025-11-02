@@ -1,0 +1,134 @@
+/* 🔹 전체 공통 스타일 */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🔹 FakeStore 제목 */
+h2 {
+  text-align: center;
+  color: #222;
+  margin: 20px 0;
+}
+
+/* 🔹 탭 메뉴 영역 */
+.tabMenu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tabMenu button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tabMenu button:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* 🔹 상품 목록 */
+.productList ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0 40px;
+}
+
+.productList li {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.productList li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔹 상품 이미지 */
+.productList img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+/* 🔹 상품명, 가격, 평점 */
+.productList p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.productList p:nth-of-type(2) {
+  font-weight: bold;
+  color: #007aff;
+}
+
+/* ================================
+   상세 페이지 스타일
+   ================================ */
+
+.detail {
+  background: white;
+  border-radius: 16px;
+  width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.detail h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.detail h2 {
+  font-size: 20px;
+  color: #007aff;
+  margin-bottom: 16px;
+}
+
+.detail img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.detail p {
+  margin: 6px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.detail a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #007aff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.detail a:hover {
+  background-color: #005fcc;
+}
