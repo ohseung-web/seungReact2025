@@ -1,0 +1,19 @@
+.meals {
+  text-align: center;
+  padding: 20px;
+}
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.meal-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fefefe;
+}
+.meal-card img {
+  width: 100%;
+  border-radius: 8px;
+}
