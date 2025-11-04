@@ -5,30 +5,42 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import ProdApp from './pages/ProdApp';
 // import ProDetail from './pages/ProDetail';
-import Fakestoreapi from './stateUI/JSON/Fakestoreapi';
-import Fakestore02 from './pages/Fakestore02';
-import FakestoreDetail02 from './pages/FakestoreDetail02';
-import useProduct from './pages/Data';
-import BookData from './pages/Book/BookData';
-import BookList from './pages/Book/BookList';
-import BookDetail from './pages/Book/BookDetail';
-import RecipeList from './pages/Recipes/RecipeList';
-import RecipeDetail from './pages/Recipes/RecipeDetail';
-import useRecipes from './pages/Recipes/RecipData';
+// import ThemeProvider from './ThemeContext';
+// import ThemeLayout from './ContextAPI/pages/ThemeLayout';
+import AuthProvider from './ContextAPI02/Contexts/AuthContext';
+import Header from './ContextAPI02/Components/Header';
+import Home from './ContextAPI02/pages/Home';
+import Profile from './ContextAPI02/Components/Profile';
+import LoginForm from './ContextAPI02/Components/LoginForm';
 
 function App() {
-  const data = useRecipes();
+  // const data = useRecipes();
   // const books = BookData();
   return (
     // <>
     //   <Fakestoreapi />
     // </>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<RecipeList data={data} />} />
-        <Route path="/detail/:id" element={<RecipeDetail data={data} />} />
-      </Routes>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<RecipeList data={data} />} />
+    //     <Route path="/detail/:id" element={<RecipeDetail data={data} />} />
+    //   </Routes>
+    // </BrowserRouter>
+    // <ThemeProvider>
+    //   <ThemeLayout />
+    // </ThemeProvider>
+    <AuthProvider>
+      <Route>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<LoginForm />} />
+            <Route path="/profile" element={<Profile />} />
+          </Routes>
+        </main>
+      </Route>
+    </AuthProvider>
   );
 }
 
