@@ -1,14 +1,35 @@
 // src/wishlist/WishlistContext.jsx
 import { createContext, useState } from 'react';
+import { useEffect } from 'react';
 
 // 1️⃣ Context 생성 (공유할 데이터의 "저장소" 역할)
 //    다른 컴포넌트에서 useContext(WishlistContext)로 접근하여 값을 읽고/수정 가능
 export const WishlistContext = createContext();
 
-// 2️⃣ Provider (데이터를 공급하는 부모 컴포넌트)
+// 2. Provider (데이터를 공급하는 부모 컴포넌트)
 export default function WishlistProvider({ children }) {
+  // // 1. 최초 렌더링 시 LocalStorage에서 불러오기
+  //  기본 아래 방법을 추천
+  const [wishlist, setWishlist] = useState(() => {
+    const saved = localStorage.getItem('wishlist');
+    return saved ? JSON.parse(saved) : []; // 저장된 게 있으면 복원, 없으면 빈 배열
+  });
+
+  // 2, wishlist가 바뀔 때마다 LocalStorage에 저장
+  useEffect(() => {
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+  }, [wishlist]);
+
   // 찜 목록을 저장할 상태 변수 (초기값은 빈 배열)
-  const [wishlist, setWishlist] = useState([]);
+  // const [wishlist, setWishlist] = useState([]);
+
+  // 1. 최초 렌더링 시 LocalStorage에서 불러오기
+  // useEffect(() => {
+  //   const saved = localStorage.getItem('wishlist');
+  //   if (saved) {
+  //     setWishlist(JSON.parse(saved)); //상태 갱신
+  //   }
+  // }, []);
 
   /**
    * 상품 찜 추가
