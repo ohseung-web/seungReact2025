@@ -14,6 +14,13 @@ import AuthProvider from './LoginExample/Context/AuthContext';
 import LoginPage from './LoginExample/Pages/LoginPage';
 import HomePage from './LoginExample/Pages/HomePage';
 import Join from './Address/Join';
+// import Counter from './Counter';
+import Counter from './components/counter';
+import ToggleApp from './storeEx/toggleApp';
+import ListApp from './storeEx/listSliceApp';
+import CheckApp from './storeEx/checkboxApp';
+import CartApp from './storeEx/cartSliceApp';
+import DateApp from './storeEx/dateApp';
 function App() {
   // ✅ showWishlist : 찜 목록 보이기 여부 (true/false)
   // ✅ setShowWishlist : 상태를 변경하는 함수
@@ -48,7 +55,7 @@ function App() {
     // </WishlistProvider>
 
     <>
-      <Join />
+      <DateApp />
       {/* <AuthProvider>
         <BrowserRouter>
           <Routes>
