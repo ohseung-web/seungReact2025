@@ -1,0 +1,55 @@
+/* Cart.css */
+.section02 {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* 연한 배경 */
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.section02 h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section02 p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.section02 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section02 li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+/* .section02 li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+} */
+
+.section02 button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.section02 button:hover {
+  background-color: #ff4c4c;
+}

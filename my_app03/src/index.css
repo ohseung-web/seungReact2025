@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,95 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+/* 강사 CSS */
+/* 기본 리셋 */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+/* 전체 화면이 세로 방향으로 정렬되도록 */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  padding: 20px;
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.section h3 {
+  text-align: center;
+}
+.header .nav {
+  display: flex;
+  gap: 20px;
+}
+/* Section (컨텐츠 영역) */
+.section {
+  padding: 20px;
+  flex: 1; /* 남는 공간을 채워 footer를 아래로 밀어줌 */
+}
+
+/* Footer - 자동으로 맨 아래로 내려가도록 */
+.footer {
+  padding: 20px;
+  background: #eee;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap; /* 여러 줄로 감싸기 */
+  gap: 20px; /* 카드 사이 간격 */
+  justify-content: flex-start; /* 여유 공간 분배 */
+  margin: 100px;
+}
+
+.product-card {
+  width: 150px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Cart */
+.cart-section {
+  padding: 20px;
+  background: #fff;
+}
+
+.cart-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
 }

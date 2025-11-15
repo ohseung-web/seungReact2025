@@ -1,0 +1,74 @@
+.container {
+    width: 460px;
+    margin: 100px auto;
+    /* border:1px solid red; */
+}
+.container ul{
+    list-style: none;
+    padding: 0;
+}
+.container h2{
+    color:rgb(2,199,90);
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.container .loginWrap{
+    padding: 20px;
+    /* border:1px solid blue; */
+}
+.container .loginWrap input[type='text'],
+.container .loginWrap input[type='password']{
+    width: 400px;
+    padding: 15px;
+    border-left:1px solid rgb(165,173,184);
+    border-right:1px solid rgb(165,173,184);
+    outline: none;
+}
+.container .loginWrap input[type='text']{
+   border-top:1px solid rgb(165,173,184);
+   border-bottom:1px solid rgb(165,173,184);  
+   border-radius: 10px 10px 0 0;
+}
+.container .loginWrap input[type='password']{
+    border-top: none;
+    border-bottom:1px solid rgb(165,173,184);  
+    border-radius: 0 0 10px 10px;
+}
+.container .loginWrap .chkLogin{
+    width: 400px;
+    padding: 10px;
+    /* margin-left: 25px; */
+    /* border:1px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+.container .loginWrap button[type='submit']{
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    background-color:rgb(165,173,184);
+    color : #fff;
+    text-align: center;
+    border:none;
+    border-radius:5px;
+}
+.container .tab{
+    width: 100px;
+    padding: 10px;
+    border-bottom: none;
+    border-top:1px solid rgb(165,173,184);
+    border-left:1px solid rgb(165,173,184);
+    border-right:1px solid rgb(165,173,184);
+    background-color: #fff;
+    display: flex;
+    justify-content:flex-start; 
+    text-align: center;
+}
+.container .loginWrap{
+    width: 100%;
+    padding: 30px;
+    border:1px solid rgb(165,173,184);
+    margin: 0 auto;
+    box-sizing: border-box; /* padding을 width에 포함시킴 */
+}
