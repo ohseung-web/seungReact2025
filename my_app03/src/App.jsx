@@ -11,7 +11,7 @@ import Home from './pages/Home';
 import CartPage from './pages/CartPage';
 import LoginNaver from './pages/LoginNaver';
 import Section from './components/Section';
-
+// import Cart01 from './Cart';
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +23,9 @@ function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
+    // <>
+    //   <Cart01 />
+    // </>
   );
 }
 

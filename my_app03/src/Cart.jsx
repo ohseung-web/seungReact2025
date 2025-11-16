@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { addItem, removeItem, clearCart } from './cartSlice';
 
-export default function Cart() {
-  const items = useSelector((state) => state.cart.items);
+export default function Cart01() {
+  const items = useSelector((state) => state.cart01.items);
   const dispatch = useDispatch();
 
   // 샘플 상품
@@ -17,18 +17,20 @@ export default function Cart() {
       <h2>장바구니</h2>
       <h3>상품 목록</h3>
       <ul>
-        {sampleProducts.map((p) => (
-          <li key={p.id}>
-            {p.name} - {p.price}원
-            <button onClick={() => dispatch(addItem(p))}>장바구니 추가</button>
+        {sampleProducts.map((item) => (
+          <li key={item.id}>
+            {item.name} - {item.price}원
+            <button onClick={() => dispatch(addItem(item))}>
+              장바구니 추가
+            </button>
           </li>
         ))}
       </ul>
 
       <h3>장바구니</h3>
       <ul>
-        {items.map((item) => (
-          <li key={item.id}>
+        {items.map((item, index) => (
+          <li key={index}>
             {item.name} - {item.price}원
             <button onClick={() => dispatch(removeItem(item.id))}>삭제</button>
           </li>

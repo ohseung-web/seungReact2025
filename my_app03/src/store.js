@@ -9,6 +9,8 @@ import authReducer from './authSlice';
 // import cartReducer from './cartSlice';
 import ProdutReducer from '../src/store/productSlice';
 import cartReducer from '../src/store/CartSlice';
+import Cart01Reducer from './cartSlice';
+
 export const store = configureStore({
   reducer: {
     counter: countReducer, // slice 등록 (key는 state 이름)
@@ -16,5 +18,6 @@ export const store = configureStore({
     auth: authReducer, // 등록
     cart: cartReducer, // 등록
     products: ProdutReducer,
+    cart01: Cart01Reducer,
   },
 });
