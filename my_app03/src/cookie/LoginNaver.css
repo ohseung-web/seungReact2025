@@ -12,6 +12,7 @@
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .container .loginWrap {
   padding: 20px;
@@ -19,7 +20,7 @@
 }
 .container .loginWrap input[type='text'],
 .container .loginWrap input[type='password'] {
-  width: 400px;
+  width: 370px;
   padding: 15px;
   border-left: 1px solid rgb(165, 173, 184);
   border-right: 1px solid rgb(165, 173, 184);
@@ -36,7 +37,7 @@
   border-radius: 0 0 10px 10px;
 }
 .container .loginWrap .chkLogin {
-  width: 370px;
+  width: 400px;
   padding: 10px;
   /* margin-left: 25px; */
   /* border:1px solid green; */

@@ -9,23 +9,26 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import CartPage from './pages/CartPage';
-import LoginNaver from './pages/LoginNaver';
+//import LoginNaver from './pages/LoginNaver';
 import Section from './components/Section';
 // import Cart01 from './Cart';
+import CookieTesst from './cookie/cookieTest';
+import LoginNaver from './cookie/LoginCookie';
+
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Section />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/login" element={<LoginNaver />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-    // <>
-    //   <Cart01 />
-    // </>
+    // <BrowserRouter>
+    //   <Header />
+    //   <Routes>
+    //     <Route path="/" element={<Section />} />
+    //     <Route path="/cart" element={<CartPage />} />
+    //     <Route path="/login" element={<LoginNaver />} />
+    //   </Routes>
+    //   <Footer />
+    // </BrowserRouter>
+    <>
+      <LoginNaver />
+    </>
   );
 }
 
