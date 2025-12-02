@@ -31,6 +31,17 @@ $userid = $data['userid'];
 $userpw = $data['userpw'];
 $username = $data['username'];
 
+// 중복 아이디 확인
+$stmt = $conn->prepare("SELECT * FROM users WHERE userid=?");
+$stmt->bind_param("s", $userid);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result->num_rows > 0) {
+    echo json_encode(["status"=>"fail", "message"=>"이미 존재하는 아이디입니다."]);
+    exit;
+}
+
 // ---------------------------
 // Prepared Statement를 사용한 안전한 INSERT
 // ---------------------------

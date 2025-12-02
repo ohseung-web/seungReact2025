@@ -6,7 +6,8 @@ export default function Signup() {
   const [userpw, setUserpw] = useState('');
   const [username, setUsername] = useState('');
 
-  const signup = async () => {
+  const signup = async (e) => {
+    e.preventDefault();
     const res = await api.post('/signup.php', { userid, userpw, username });
 
     if (res.data.status === 'success') {

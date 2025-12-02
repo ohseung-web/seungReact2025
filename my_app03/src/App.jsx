@@ -23,18 +23,18 @@ import LoginNaver02 from './cookie/LoginCookie-onday';
 
 function App() {
   return (
-    // <BrowserRouter>
-    //   <Header />
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     <Route path="/join" element={<Signup />} />
-    //     <Route path="/login" element={<Login />} />
-    //   </Routes>
-    // {/* <Footer /> */}
-    // </BrowserRouter>
-    <>
-      <LoginNaver02 />
-    </>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/join" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+      {/* <Footer /> */}
+    </BrowserRouter>
+    // <>
+    //   <LoginNaver02 />
+    // </>
   );
 }
 
