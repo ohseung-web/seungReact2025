@@ -1,8 +1,24 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 //import api from './axios';
+import './Header.css';
+//import { useAuth } from '../context/AuthContext';
+import { useContext } from 'react';
+import { AuthContext } from '../context/AuthContext';
 
 export default function Header() {
+  //const [userid, setUserid] = useState(null);
+  const navigate = useNavigate();
+  const { userid, logout } = useContext(AuthContext); // 👈 추가
+
+  // 로그아웃 핸들러
+  const logoutHandler = () => {
+    logout();
+    alert('로그아웃 되었습니다.');
+    navigate('/');
+  };
+
   return (
     <header className="header">
       <h2>
@@ -13,7 +29,21 @@ export default function Header() {
       </h2>
       <nav className="nav">
         <Link to="/">Home</Link>
-        <Link to="/join">Join</Link>
+        {userid ? (
+          // 로그인 상태
+          <>
+            <span>{userid}님</span>
+            <button type="button" onClick={logoutHandler}>
+              Logout
+            </button>
+          </>
+        ) : (
+          // 로그아웃 상태
+          <>
+            <Link to="/login">Login</Link>
+            <Link to="/join">Join</Link>
+          </>
+        )}
       </nav>
     </header>
   );

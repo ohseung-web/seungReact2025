@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import './JoinForm.css';
 
 export default function JoinForm() {
   const [userid, setUserid] = useState('');
@@ -17,8 +18,9 @@ export default function JoinForm() {
           userpw,
           username,
         }
-      );
 
+      );
+      console.log('join확인', res.data);
       if (res.data.status === 'success') {
         alert('회원가입 성공!');
         // 입력 필드 초기화 (선택사항)

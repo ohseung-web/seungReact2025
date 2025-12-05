@@ -1,6 +1,10 @@
 <?php
+// 세션 시작 (반드시 최상단에!)
+session_start();
+
 //CORS 설정(React에서 접근 가능하도록 지정)
-header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Origin: http://localhost:5173");//vite 기본 포트
+header('Access-Control-Allow-Credentials: true'); // 👈 세션 쿠키 전송 허용
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json; charset=UTF-8");
