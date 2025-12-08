@@ -1,6 +1,8 @@
 <?php
 include '../config/database.php';
 
+// React나 다른 프론트엔드에서 fetch/axios로 보낸 POST 데이터를
+// php://input을 통해 읽고, json_decode로 배열로 변환
 $data = json_decode(file_get_contents('php://input'),true);
 
 $userid = $data['userid'];
@@ -24,9 +26,8 @@ $result = $stmt->get_result();
 $respones = [];
 if($result->num_rows > 0){
 
-     // 👇 세션에 사용자 정보 저장
-    // $_SESSION['userid'] = $user['userid'];
-    // $_SESSION['userpw'] = $user['userpw'];
+   // ⭐ 쿠키 저장 (1시간 유지)
+   // setcookie("userid", $userid, time()+3600, "/", "", false, false);
 
     $respones['status'] = 'success';
     $respones['message'] = '로그인 성공';
@@ -37,6 +38,9 @@ if($result->num_rows > 0){
     $respones['status']='fail';
     $respones['message']='아이디 또는 비밀번호가 일치하지 않습니다.';
 }
+
+// json_encode($respones) 는 => React의 오브젝트 배열로 변환
+// {status:'success', message:'로그인성공', userid:'입력받은 id'} 
 echo json_encode($respones);
 $stmt->close();
 $conn->close();

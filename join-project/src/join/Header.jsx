@@ -1,16 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-//import api from './axios';
 import './Header.css';
-//import { useAuth } from '../context/AuthContext';
 import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 
 export default function Header() {
-  //const [userid, setUserid] = useState(null);
   const navigate = useNavigate();
-  const { userid, logout } = useContext(AuthContext); // 👈 추가
+  const { userid, logout } = useContext(AuthContext);
 
   // 로그아웃 핸들러
   const logoutHandler = () => {

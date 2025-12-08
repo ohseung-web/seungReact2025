@@ -5,11 +5,11 @@ export const AuthContext = createContext();
 export default function AuthProvider({ children }) {
   const [userid, setUserid] = useState(null);
 
-  // 컴포넌트 마운트 시 localStorage에서 사용자 정보 불러오기
+  // 컴포넌트 마운트  localStorage에서 사용자 정보 불러오기
   useEffect(() => {
     const savedUserid = localStorage.getItem('userid');
     if (savedUserid) {
-      setUserid(JSON.parse(savedUserid)); // ✔ JSON.parse 다시 사용
+      setUserid(JSON.parse(savedUserid));
       //setUserid(savedUserid);
     }
   }, []);

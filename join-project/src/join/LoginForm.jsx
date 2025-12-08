@@ -2,7 +2,6 @@ import './LoginForm.css';
 import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-//import { useAuth } from '../context/AuthContext';
 import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 
@@ -10,11 +9,21 @@ export default function LoginForm() {
   const [userid, setUserid] = useState('');
   const [userpw, setUserpw] = useState('');
   const navigate = useNavigate();
-  const { loginsave } = useContext(AuthContext); // 👈 추가
+  const { loginsave } = useContext(AuthContext); // Context API 이용 데이터 공유
 
   const login = async (e) => {
     e.preventDefault();
     try {
+      // React 에서 PHP 서버로 데이터를 보낸다(post) 라는 의미
+      // axios.post(url,{서버에 보낼 실제 데이터})
+      // React에서 {userid: '입력한 아이디값',userpw: '입력한 비밀번호값'}
+      // PHP의 login.php에 react의 input에서 입력한 userid,userpw데이터 전달
+      // 아래 4가지가 HTTP 요청방식이다.
+      // POST : 서버에 데이터 보내기
+      // GET : 서버에서 데이터 가져오기
+      // PUT : 서버의 데이터 수정하기
+      // DELETE : 서버의 데이터 삭제하기
+
       const res = await axios.post(
         'http://localhost/join-project/backend/api/login.php',
         { userid, userpw }
