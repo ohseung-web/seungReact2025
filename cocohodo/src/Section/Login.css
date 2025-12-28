@@ -1,0 +1,134 @@
+.form-container{
+    margin: 30px auto;
+    padding: 30px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #d6caca;
+    background-color: white;
+}
+.form-container h2{
+    margin: 0 0 30px 0;
+    padding: 0;
+    text-align: center;
+}
+.form-container .top-login{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+.form-container .top-login ul{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.form-container .top-login ul li{
+    margin: 0 0 5px 0;
+}
+.form-container .top-login ul li button{ /* 네이버 카카오 버튼 */
+    width: 362px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form-container .top-login ul li .kakaobtn{
+    color: #31140e;
+    background-color: #ffd900;
+}
+.form-container .top-login ul li .naverbtn{
+    color: #f8f8f8;
+    background-color: #37ad37;
+}
+.form-container .hrbar{/* 구분선 */
+    margin: 0 auto;
+    padding: 0;
+}
+.form-container .hrbar .borderbar{ /* 구분선 */
+    margin: 30px;
+    padding: 0;
+    border-bottom: 1px solid #c5c5c5ee;
+}
+.form-container .join{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+.form-container .join ul{ /* 자체 로그인 */
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.form-container .join ul li{
+    margin: 0;
+    padding: 0;
+}
+.form-container .join ul li input[type=id]{
+    margin: 0;
+    padding: 0 0 0 10px;
+    width: 350px;
+    height: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 5px 5px 0 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.form-container .join ul li input[type=password]{
+    margin: 0;
+    padding: 0 0 0 10px;
+    width: 350px;
+    height: 38px;
+    border: 1px solid #cccccc;
+    border-radius: 0 0 5px 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.form-container .join ul li button{
+    margin: 5px 0;
+    padding: 0;
+    width: 362px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #69182c;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+.form-container .join p{
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.form-container .join-text{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+.form-container .join-text p a{
+    text-decoration: none;
+    color: #333;
+}
+
+.form-container .non-join{ /*비회원 주문*/
+    margin: 0 0 30px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.form-container .non-join button{
+    width: 362px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #555;
+    background-color: #bdbdbd;
+    cursor: pointer;
+}

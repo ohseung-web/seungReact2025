@@ -1,0 +1,94 @@
+.page-container{
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0;
+    width: 1400px;
+}
+
+.page-container .list-box ul{
+    margin: 0 auto;
+    padding: 0 0 0 3px;
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 30px 15px;
+}
+.page-container .list-box ul li{
+    margin: 0;
+    padding: 0px;
+    border-radius: 20px;
+    height: 410px;
+    background-color: white;
+    position: relative;
+}
+.page-container .list-box ul li a{
+    text-decoration: none;
+}
+.page-container .list-box ul li .hodoimgbox{
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    border-radius: 25px 25px 0 0;
+    overflow: hidden;
+}
+.page-container .list-box ul li img{
+    width: 335px;
+    border-radius: 20px 20px 0 0;
+}
+
+.page-container .list-box ul li img:hover{
+    transform: scale(1.3)
+}
+
+.page-container .list-box ul li h3{
+    margin: 0;
+    padding: 15px 0 0 30px;
+    font-size: 24px;
+    color: #555;
+}
+.page-container .list-box ul li .btncart{ /* <----- 장바구니 버튼*/
+    position: absolute;
+    right: 10px;
+    top:10px;
+}
+.page-container .list-box ul li .btncart .qkrnsl{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+}
+
+.page-container .list-box ul li .btncart .qkrnsl h1{
+    margin: 0;
+    padding: 0;
+    color: #61182a;
+    cursor: pointer;
+}
+
+.page-container .list-box ul li .pribuy {
+    margin: 5px 20px 20px 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page-container .list-box ul li .pribuy p{
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #999;
+}
+
+.page-container .list-box ul li .pribuy button{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #61182a;
+    background-color: #ffeeda;
+}

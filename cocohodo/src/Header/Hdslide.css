@@ -1,0 +1,120 @@
+.topSlide{
+    margin: 0 auto;
+    padding: 0;
+    width: 1600px;
+}
+
+.topSlide .slide-navi {
+    position: relative;
+}
+.topSlide .slide-navi img{
+    margin: 0 auto;
+    padding: 0;
+    width: 1600px;
+    display: flex;
+    border-radius: 0 0 25px 25px;
+}
+
+.topSlide .slide-navi .slide-prev{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 25px;
+    -webkit-text-stroke: 3px #555;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.topSlide .slide-navi .slide-next{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    -webkit-text-stroke: 3px #555;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.topSlide .slide-navi .btn-bar{
+    position: absolute;
+    bottom: 3.5%;
+    left: 45%;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 60px;
+    width: 120px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: white;
+}
+.topSlide .slide-navi .btn-bar ul{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.topSlide .slide-navi .btn-bar ul li{
+    margin: 0 auto;
+    padding: 0;
+}
+.topSlide .slide-navi .btn-bar ul li button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.topSlide .slide-navi .btn-bar #slide-clove{
+    margin: 0 auto;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.topSlide .slide-navi .btn-bar #slide-clove img{
+    margin: 0 auto;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    filter: invert(50%);
+    opacity: 50%;
+}
+
+.topSlide .slide-navi .btn-bar #slide-clove.active img{
+    filter: invert(0);
+    opacity: 100%;
+}
+
+.topSlide .slide-navi .btn-size{
+    position: absolute;
+    left: 45.7%;
+    bottom: 4%;
+    margin: 0;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    text-align: center;
+}
+.topSlide .slide-navi .btn-size .slide-toggle-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.topSlide .slide-navi .slide-toggle-btn p{
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    font-size: 20px;
+}
+.topSlide .slide-navi .slide-toggle-btn p span{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}

@@ -1,0 +1,48 @@
+.footer-container{
+    margin: 0 auto;
+    padding: 50px 50px 10px 50px;
+    border-top: 1px solid #999;
+}
+.footer-container .logo02{
+    margin: 0;
+    padding: 0;
+}
+/* #6b1a1a 코코호도 로고 헥스 코드 */
+.footer-container .info ul{
+    margin: 50px 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.footer-container .info ul li h4{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #777;
+}
+
+.footer-container .info ul li p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+}
+.footer-container .info ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+}
+
+.footer-container .info ul li h1{
+    margin: 0;
+    padding: 0 0 20px 0;
+    color: #777;
+}
+.footer-container .info ul li h3{
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: #777;
+}

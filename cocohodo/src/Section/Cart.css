@@ -1,0 +1,174 @@
+.cart-container{
+    margin:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 1400px;
+    padding: 0;
+}
+
+input[type="checkbox"] { /*체크박스 공통 배경색*/
+  accent-color: #801b34;
+}
+
+.cart-container .table-box{
+    margin: 0 auto;
+    padding: 0;
+}
+.cart-container .table-box table{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.cart-container .table-box table caption{ /*캡션 - 장바구니*/
+    margin: 20px 0 20px 0;
+    padding: 0;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+.cart-container .table-box table caption>input{
+    margin: 0 10px 0 0;
+    width: 16px;
+    height: 16px;
+}
+.cart-container .table-box table caption>p{
+    margin: 0 10px;
+    padding: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.cart-container .table-box table tr th{ /* 표 제목 */
+    padding: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #a8a8a8;
+}
+
+.cart-container .table-box table tr .big-th{ /* 표 넓이*/
+    width: 935px;
+}
+.cart-container .table-box table tr .small-th{
+    width: 150px;
+}
+.cart-container .table-box table tr .table-center-title{
+    margin: 10px 0 10px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.cart-container .table-box table tr .table-center-title>input{
+    margin: 0 10px 0 0;
+    width: 16px;
+    height: 16px;
+}
+.cart-container .table-box table tr .table-center-title img{ /* 상품 이미지 */
+    width: 80px;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+}
+.cart-container .table-box table tr .table-center-title p{
+    padding: 0 0 0 10px;
+    font-size: 13px;
+    color: #464646;
+}
+.cart-container .table-box table tr td{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+}
+.cart-container .table-box table tr td>button{ /* 상품빼기 */
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    font-size: 11px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ffffffee;
+    color: #818181;
+}
+.cart-container .table-box table tr td .table-btnbox{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    height: 25px;
+    align-items: center;
+    border: 1px solid #801b34;
+    border-radius: 25px;
+    background-color: transparent;
+}
+.cart-container .table-box table tr td .table-btnbox>p{
+    font-size: 13px;
+    font-weight: bold;
+}
+.cart-container .table-box table tr td .table-btnbox button{
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    font-size: 20px;
+    color: #4e4e4e;
+    border: none;
+    background-color: transparent;
+}
+.cart-container .table-box table tr .rmador p{ /*금액*/
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+}
+.cart-container .table-box table tr .qothd p{ /*배송비*/
+    font-size: 13px;
+    color: #666;
+}
+.cart-container .table-box .table-btm{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-container .table-box .table-btm p{ /* 하단 총합계 금액*/
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+.cart-container .table-box .table-btm button{ /*선택주문버튼*/
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+    font-size: 13px;
+    background-color: #ffd86d;
+    cursor: pointer;
+}
+.cart-container .table-box .table-btm button:hover{
+    font-weight: 500;
+    background-color: #ffbd43;
+}
+
+.cart-container .cart-buybtn{ /* 주문버튼 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.cart-container .cart-buybtn .naverbtm{
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    background-color: #5ddf5d;
+    cursor: pointer;
+}
+.cart-container .cart-buybtn .cocobtm{
+    width: 200px;
+    height: 40px;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: #61182a;
+    cursor: pointer;
+}
